@@ -1,0 +1,522 @@
+* {
+    font-family: Arial;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçário da página */
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+}
+
+nav .active a,
+nav a:hover {
+    background-color: #36a9e1;
+    color: #FFFFFF;
+}
+
+/* section do banner */
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/img1.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 670px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.banner-headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-headline h1 {
+    color: #FFFFFF;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+
+.banner-headline h2 {
+    color: #FFFFFF;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+.banner-options {
+    height: 210px;
+    display: flex;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    color: #FFF;
+    padding: 20px;
+}
+
+.banner1 {
+    background-color: #36a9e1;
+}
+
+.banner2 {
+    background-color: #0079c7;
+}
+
+.banner3 {
+    background-color: #2b4c99;
+}
+
+.banner-title {
+    font-size: 21px;
+}
+
+.banner-desc {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-options a {
+    display: inline-block;
+    border: 1px solid #FFF;
+    padding: 5px;
+    color: #FFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Exercício 1 */
+.banner3-week {
+    margin-top: 10px;
+}
+
+.banner3-week,
+.banner3-weekend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 2px #2b4cc1 solid;
+}
+
+/* Conteúdos da section de notícia, departamentos e contatos */
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+#content section {
+    flex: 2;
+}
+
+#content aside {
+    flex: 1;
+}
+
+.widget-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget-title-text {
+    color: #000;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.widget-title-bar {
+    width: 50px;
+    height: 2px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+}
+
+/* Exercício 2 */
+/* Alinhamento e estilo dos departamentos */
+.widget-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.widget-body-departaments {
+    width: 150px;
+    height: 150px;
+    background-color: #36a9e1;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Alinhamento e estilo da descrição e meios de contato  */
+.widget-body-text {
+    font-size: 14px;
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.widget-body-contacts {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px #555 solid;
+    font-size: 14px;
+}
+
+.widget-body-contacts img {
+    width: 20px;
+    height: 20px;
+}
+
+.widget-body-contacts a {
+    color: #2b4c99;
+}
+
+/* Área das notícias */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article .news-data {
+    display: flex;
+}
+
+article .news-posted-at {
+    background-color: #2b4c99;
+    color: #FFF;
+    font-size: 14px;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+article .news-comments {
+    background-color: #36a9e1;
+    color: #FFF;
+    font-size: 14px;
+    padding: 10px;
+}
+
+article .news-thumbnail {
+    margin-top: 30px;
+}
+
+article .news-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+article .news-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+article .news-resume {
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+/* Rodapé do site */
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.fm-1,
+.fm-2,
+.fm-3 {
+    flex: 1;
+    color: #FFF;
+}
+
+.fm-1 {
+    background-color: #36a9e1;
+}
+
+.fm-2 {
+    background-color: #0079c7;
+}
+
+.fm-3 {
+    background-color: #2b4c99;
+}
+
+/* Menu do rodapé */
+.footer-menu a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #FFF;
+}
+
+.footer-menu-title {
+    font-size: 23px;
+}
+
+.footer-menu-desc {
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.footer-title-text {
+    font-size: 17px;
+    color: #FFF;
+}
+
+.footer-area {
+    display: flex;
+}
+
+.footer-areaitem {
+    flex: 1;
+    color: #FFF;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+footer .widget-title-text {
+    color: #FFF;
+}
+
+/* Exercício 3 */
+/* Endereços e redes sociais do rodapé*/
+.footer-body-desc {
+    color: #727272;
+    font-size: 14px;
+}
+
+.footer-contacts {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #727272;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.footer-contacts a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Latest Posts and Latest Tweets*/
+.footer-body-posts {
+    font-size: 13px;
+}
+
+.footer-body-dataPosts {
+    color: #36a9e1;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 4px;
+    padding-left: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-body-postsTweets {
+    color: #727272;
+    font-size: 13px;
+}
+
+/* Icones das redes sociais */
+.footer-body-socialMedia-box {
+    display: flex;
+    margin-top: 30px;
+}
+
+.footer-body-icons-socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    background-color: #35343493;
+    margin-right: 8px;
+}
+
+/* Copyright */
+.footer-copy {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #727272;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm-line {
+    height: 3px;
+    background-color: #36a9e1;
+}
+
+
+
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFF;
+    }
+
+    nav .active a,
+    nav a:hover {
+        background-color: #36a9e1;
+        color: #FFFFFF;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .logo-header {
+        padding-left: 20px;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    /* section dos banners */
+    .banner-headline {
+        padding: 20px;
+    }
+
+    .banner-headline h1 {
+        font-size: 55px;
+    }
+
+    .banner-headline h2 {
+        font-size: 17px;
+    }
+
+    .banner-options {
+        height: auto;
+        flex-direction: column;
+    }
+
+    /* section dos departamentos e posts */
+    .container {
+        flex-direction: column;
+    }
+
+    #geral section,
+    #geral aside {
+        padding: 20px;
+    }
+
+    .widget-body-departaments {
+        margin: 20px;
+        justify-content: space-evenly;
+    }
+
+    /* Rodapé */
+    .footer-menu {
+        flex-direction: column;
+    }
+
+    .footer-area {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-copy {
+        padding: 20px;
+    }
+}
